@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    tools:context=".HomePage">
+
+
+
+    <ImageView
+        android:id="@+id/signOut"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:src="@drawable/ic_signout" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/graph_card"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@id/signOut"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="25dp">
+
+
+        <TextView
+            android:id="@+id/choose_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="8/1/2022"
+            android:textColor="#EC09CE"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/activity_main_piechart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/setwhite" />
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginRight="20dp"
+            android:background="#0FAE62"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Lodding...."
+            android:textColor="@color/set1"
+            android:textSize="20dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/graph_card"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="25dp">
+
+
+        <LinearLayout
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0FAE62"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/addExpanse"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/ic_addexpense" />
+
+            <ImageView
+                android:id="@+id/addImcome"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/ic_addincome" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

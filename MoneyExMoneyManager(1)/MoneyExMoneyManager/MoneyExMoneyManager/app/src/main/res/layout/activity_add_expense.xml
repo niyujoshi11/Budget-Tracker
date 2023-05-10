@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".AddExpense">
+
+
+    <ImageView
+        android:id="@+id/back_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_back_white" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#32323A">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_300"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add Expense"
+                android:textColor="#000000"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:background="#E9E4E4"
+                android:drawableStart="@drawable/ic_baseline_currency_rupee_24"
+                android:drawablePadding="10dp"
+                android:hint="Enter Amount"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#E9E4E4"
+                android:drawableStart="@drawable/ic_title"
+                android:drawablePadding="10dp"
+                android:hint="Enter Title"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/chooseExpense"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#E9E4E4"
+                android:drawableStart="@drawable/ic_downarrow"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="Choose Category"
+                android:textColor="#000000"
+                android:textColorHint="@color/setwhite" />
+
+            <TextView
+                android:id="@+id/chooseDate"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chooseExpense"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#E9E4E4"
+                android:drawableStart="@drawable/ic_calender"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Choose Date"
+                android:textColor="#000000"
+                android:textColorHint="@color/setwhite"
+                android:textSize="15dp" />
+
+
+            <Button
+                android:id="@+id/submitExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chooseDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:width="170dp"
+                android:background="#0FAE62"
+                android:backgroundTint="#0FAE62"
+                android:text="Add"
+                android:textColor="#202027"
+                android:textSize="25dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

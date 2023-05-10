@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "623534146421",
+    "project_id": "moneyex-mca",
+    "storage_bucket": "moneyex-mca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623534146421:android:fb5dbddd55f36e2ac9093c",
+        "android_client_info": {
+          "package_name": "com.ajsoftwaresolutions.moneyex_moneymanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623534146421-o8bdtftg6ci8vegsmqe4tmrc0eeil1me.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG5ONcUnoB_OkWPnKQwQTUgzp72ramf7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623534146421-o8bdtftg6ci8vegsmqe4tmrc0eeil1me.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
